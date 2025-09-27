@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
     .catch(err => console.error('MongoDB connection error:', err));
 
 app.get('/', (req, res) => {
-    res.send('Bienvenue sur l\'API de Gestion Cloud !');
+    res.send('Welcome to the Cloud Management API!');
 });
 
 app.listen(PORT, () => {
