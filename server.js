@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
     .catch(err => console.error('Erreur de connexion à MongoDB:', err));
 
 app.get('/', (req, res) => {
-    res.send('Bienvenue sur l API de la Gestion Cloud !');
+    res.send('Bienvenue sur l\'API de la Gestion Cloud !');
 });
 
 app.listen(PORT, () => {
